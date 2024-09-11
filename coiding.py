@@ -48,9 +48,9 @@ control_system = ctrl.ControlSystem([rule1, rule2, rule3, rule4, rule5, rule6, r
 simulation = ctrl.ControlSystemSimulation(control_system)
 
 # ทดสอบระบบควบคุมด้วยค่าอินพุต
-simulation.input['temperature'] = 40  # ตั้งค่าอุณหภูมิ (°C) เพื่อทดสอบ (15-40 °C)
-simulation.input['humidity'] = 90     # ตั้งค่าความชื้น (%) เพื่อทดสอบ (30-90 %)
-simulation.input['light'] = 100        # ตั้งค่าแสง (%) เพื่อทดสอบ (0-100 %)
+simulation.input['temperature'] = 30  # ตั้งค่าอุณหภูมิ (°C) เพื่อทดสอบ (15-40 °C)
+simulation.input['humidity'] = 70     # ตั้งค่าความชื้น (%) เพื่อทดสอบ (30-90 %)
+simulation.input['light'] = 90        # ตั้งค่าแสง (%) เพื่อทดสอบ (0-100 %)
 
 # คำนวณผลลัพธ์จากการทดสอบ
 simulation.compute()
